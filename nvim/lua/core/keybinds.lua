@@ -19,7 +19,7 @@ map("zg","z=")
 map("z=","zg")
 map(";",":")
 map(":",";")
-
--- Only works in gui mode
 vmap("<M-c>", "\"+y")
 map("<M-v>", "\"+p")
+map("<F4>", ":split | :terminal<CR> | <C-w>Ji")
+map("<F12>", ":Ex ~/.config/nvim/lua<CR>")

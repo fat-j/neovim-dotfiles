@@ -1,2 +1,5 @@
-vim.keymap.set("", "<F8>", ":TagbarToggle<CR>")
 vim.keymap.set("", "<F2>", ":NERDTreeToggle<CR>")
+vim.keymap.set("", "<F3>", ":TagbarToggle<CR>")
+vim.keymap.set("", "<F5>", ":TroubleToggle<CR>")
+vim.keymap.set("", "<F6>", ":UndotreeToggle<CR>")
+vim.keymap.set("", "<F7>", ":FZF<CR>")

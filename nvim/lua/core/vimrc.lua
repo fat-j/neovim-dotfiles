@@ -2,6 +2,8 @@ function cmd(input)
 	vim.cmd(":" .. input)
 end
 
+-- Disable automatic comments
+cmd("autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o")
 -- Idk
 cmd("set nocompatible")
 -- Colors
