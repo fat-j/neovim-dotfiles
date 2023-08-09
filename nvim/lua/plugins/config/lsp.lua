@@ -1,14 +1,17 @@
--- Setup language servers.
-local lspconfig = require('lspconfig')
-lspconfig.pyright.setup {}
-lspconfig.tsserver.setup {}
-lspconfig.rust_analyzer.setup {
-  -- Server-specific settings. See `:help lspconfig-setup`
-  settings = {
-    ['rust-analyzer'] = {},
-  },
-}
+require("mason").setup()
+require("mason-lspconfig").setup({
+		ensure_installed = {"lua_ls", "vimls", "pylsp", "gopls", "rust_analyzer", "clangd", "jsonls", "lemminx", "html", "jdtls", "bashls"}
+})
 
+require("mason-lspconfig").setup_handlers {
+    -- The first entry (without a key) will be the default handler
+    -- and will be called for each installed server that doesn't have
+    -- a dedicated handler.
+    function (server_name) -- default handler (optional)
+        require("lspconfig")[server_name].setup {
+        }
+    end
+}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -48,7 +51,14 @@ vim.api.nvim_create_autocmd('LspAttach', {
   end,
 })
 
--- Default Colors
+-- Disable underlining
+vim.lsp.handlers["textDocument/publishDiagnostics"] =
+  vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics,
+  {
+    underline = false
+  }
+)
 require("lsp-colors").setup({
   Error = "#db4b4b",
   Warning = "#e0af68",
