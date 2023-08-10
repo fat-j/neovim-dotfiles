@@ -1,5 +1,5 @@
 require("core")
 require("plugins")
 require("plugins/config")
+require("core/gvimrc")
 vim.cmd(":e ~/Downloads")
-vim.cmd(":hi SpellBad gui=underdotted")

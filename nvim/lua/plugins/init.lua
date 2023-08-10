@@ -25,6 +25,7 @@ Plug 'norcalli/nvim-colorizer.lua' -- Colors in hex or names
 Plug 'preservim/tagbar' -- F3 Shows information about functions/variables
 Plug 'tpope/vim-commentary' -- Easily comment lines with gcc or gc in visual
 Plug 'Wansmer/treesj' -- Easily turn arrays/functions into multiple lines or vice versa with :TSJToggle
+Plug 'maxboisvert/vim-simple-complete' -- Nice and simple auto completion that takes from the current file and files in the same folder
 Plug 'vim-airline/vim-airline' -- Info in the bottom status bar -- vim-airline/vim-airline-themes for themes
 Plug 'nvim-tree/nvim-web-devicons' -- Icons with colors
 Plug 'folke/trouble.nvim' -- F5 Gives a list of issues with the code
@@ -32,7 +33,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'-- Shows the indentation guide lines
 -- NERDTree -- Sidebar file manager
 Plug 'preservim/nerdtree' -- F2 for nerdtree
 Plug 'Xuyuanp/nerdtree-git-plugin' -- Shows git status flaga
-Plug 'maxboisvert/vim-simple-complete' -- Nice and simple auto completion that takes from the current file and files in the same folder
+
 -- COQ --
 vim.cmd("Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}")
 vim.cmd("Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}")
