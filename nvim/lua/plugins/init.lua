@@ -1,7 +1,7 @@
 local Plug = vim.fn['plug#']
 
 vim.call('plug#begin', '~/.config/nvim/lua/plugins/plugged')
--- Colors
+-- Colors --
 vim.cmd("Plug 'catppuccin/nvim', { 'as': 'catppuccin' }")
 Plug 'AlexvZyl/nordic.nvim'
 Plug 'rebelot/kanagawa.nvim'
@@ -9,12 +9,12 @@ Plug 'folke/tokyonight.nvim'
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'jacoborus/tender.vim'
 vim.cmd("Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }")
--- LSP
+-- LSP --
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'folke/lsp-colors.nvim'
--- Miscellaneous 
+-- Miscellaneous  --
 vim.cmd("Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}") -- Better syntax highlighting -- Install languages with :TSInstall language
 Plug 'kylechui/nvim-surround' -- Easily surround things with y|c|d + s + movements
 Plug 'sheerun/vim-polyglot' -- Tons of language packs
@@ -31,9 +31,10 @@ Plug 'folke/trouble.nvim' -- F5 Gives a list of issues with the code
 -- NERDTree -- Sidebar file manager
 Plug 'preservim/nerdtree' -- F2 for nerdtree
 Plug 'Xuyuanp/nerdtree-git-plugin'
--- COQ
+-- COQ --
 vim.cmd("Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}")
 vim.cmd("Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}")
 --
+
 vim.call('plug#end')
 

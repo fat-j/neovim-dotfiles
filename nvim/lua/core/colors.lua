@@ -11,3 +11,8 @@
 --vim.cmd.colorscheme 'tender'
 
 vim.cmd.colorscheme 'nightfly'
+
+vim.cmd(":hi DiagnosticVirtualTextWarn guifg=#e0af68")
+vim.cmd(":hi DiagnosticVirtualTextHint guifg=#10B981")
+vim.cmd(":hi DiagnosticVirtualTextInfo guifg=#0db9d7")
+vim.cmd(":hi DiagnosticVirtualTextError guifg=#db4b4b")

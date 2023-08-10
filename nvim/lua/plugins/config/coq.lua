@@ -11,6 +11,7 @@ require("mason-lspconfig").setup_handlers {
 }
 
 vim.cmd('let g:coq_settings = { "keymap.recommended": v:false }')
+vim.cmd("let g:coq_settings = { 'display.icons.mode': 'none' }")
 
 -- Keybindings
 vim.cmd('ino <silent><expr> <Esc>   pumvisible() ? "<C-e><Esc>" : "<Esc>"')

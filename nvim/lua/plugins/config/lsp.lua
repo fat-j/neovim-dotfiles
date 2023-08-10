@@ -51,17 +51,17 @@ vim.api.nvim_create_autocmd('LspAttach', {
   end,
 })
 
--- Disable underlining
+-- Disable underlining --[[
 vim.lsp.handlers["textDocument/publishDiagnostics"] =
   vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics,
   {
-    underline = false
+    underline = true 
   }
 )
-require("lsp-colors").setup({
-  Error = "#db4b4b",
-  Warning = "#e0af68",
-  Information = "#0db9d7",
-  Hint = "#10B981"
-})
+--]]
+
+vim.cmd(":hi DiagnosticUnderlineError gui=bold")
+vim.cmd(":hi DiagnosticUnderlineWarn gui=bold")
+vim.cmd(":hi DiagnosticUnderlineInfo gui=bold")
+vim.cmd(":hi DiagnosticUnderlineHint gui=bold")
