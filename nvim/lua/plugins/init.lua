@@ -32,6 +32,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'-- Shows the indentation guide lines
 -- NERDTree -- Sidebar file manager
 Plug 'preservim/nerdtree' -- F2 for nerdtree
 Plug 'Xuyuanp/nerdtree-git-plugin' -- Shows git status flaga
+Plug 'maxboisvert/vim-simple-complete' -- Nice and simple auto completion that takes from the current file and files in the same folder
 -- COQ --
 vim.cmd("Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}")
 vim.cmd("Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}")
