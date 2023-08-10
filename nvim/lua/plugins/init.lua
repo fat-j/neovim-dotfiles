@@ -28,9 +28,10 @@ Plug 'Wansmer/treesj' -- Easily turn arrays/functions into multiple lines or vic
 Plug 'vim-airline/vim-airline' -- Info in the bottom status bar -- vim-airline/vim-airline-themes for themes
 Plug 'nvim-tree/nvim-web-devicons' -- Icons with colors
 Plug 'folke/trouble.nvim' -- F5 Gives a list of issues with the code
+Plug 'lukas-reineke/indent-blankline.nvim'-- Shows the indentation guide lines
 -- NERDTree -- Sidebar file manager
 Plug 'preservim/nerdtree' -- F2 for nerdtree
-Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Xuyuanp/nerdtree-git-plugin' -- Shows git status flaga
 -- COQ --
 vim.cmd("Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}")
 vim.cmd("Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}")
