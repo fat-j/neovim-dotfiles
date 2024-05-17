@@ -6,7 +6,13 @@ require("plugins/config/treesitter")
 require("plugins/config/lsp")
 
 require('mini.cursorword').setup()
-require('mini.pairs').setup()
+require('mini.pairs').setup(
+    {
+        mappings = {
+            ["'"] = false,
+        },
+    }
+    )
 require('mini.hipatterns').setup()
 
 require('colorizer').setup()
@@ -20,4 +26,3 @@ vim.cmd("let NERDTreeMouseMode=3")
 -- require('treesj').toggle()
 -- require('treesj').split()
 -- require('treesj').join()
-
